@@ -1,11 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int a,b;
+    int n,year;
 
-    printf("Enter two numbers: ");
-    scanf("%d %d",&a,&b);
-    printf("Sum= %d",a+b);
+    scanf("%d", &n);
 
+    if( n%4 == 0 && n%400 !=0 )
+    {
+        printf("Leap Year : %d\n", n);
+    }
+    else
+    {
+        year = (n+4)-(n%4);
+        printf("Nearest Leap Year: %d\n",year);
+    }
     return 0;
 }

@@ -1,16 +1,25 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c,sum;
-    float avg;
+    char a;
 
-    printf("Enter three numbers: ");
-    scanf("%d %d %d",&a,&b,&c);
+    scanf("%c", &a);
 
-    sum=a+b+c;
-    avg=(float)sum/3;
-
-    printf("Average= %.2f",avg);
-
+    if ( a >= 'a' && a<= 'z' )
+    {
+        printf("Small Letter\n");
+    }
+    else if ( a >= 'A' && a<= 'Z' )
+    {
+        printf("Capital Letter\n");
+    }
+    else if ( a>=0 || a<=9 )
+    {
+        printf("Digit\n");
+    }
+    else
+    {
+        printf("Special Symbol\n");
+    }
     return 0;
 }

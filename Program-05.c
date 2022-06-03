@@ -1,15 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    float a,b,c,sum,avg;
+    char a;
 
-    printf("Enter three numbers: ");
-    scanf("%f %f %f",&a,&b,&c);
+    scanf("%c", &a);
 
-    sum=a+b+c;
-    avg=sum/3;
-
-    printf("Average= %.2f",avg);
-
+    if ( a== 'A' || a== 'a' || a == 'E' || a == 'e' || a == 'I' || a == 'i' || a == 'o' || a == 'O' ||
+    a == 'U' || a == 'u' )
+    {
+        printf("Vowel\n");
+    }
+    else
+    {
+        printf("Consonant\n");
+    }
     return 0;
 }

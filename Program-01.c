@@ -1,6 +1,17 @@
 #include<stdio.h>
 int main()
 {
-    printf("Name: Majeda Rahman");
+    int n;
+
+    scanf("%d", &n);
+
+    if( n%2==0 )
+    {
+        printf("The Even Number Is: %d\n", n);
+    }
+    else
+    {
+        printf("The Odd Number Is: %d\n", n);
+    }
     return 0;
 }

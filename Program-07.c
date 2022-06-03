@@ -1,14 +1,34 @@
 #include<stdio.h>
 int main()
 {
-    float a;
+    int a,b,c,max;
 
-    printf("Enter km value: ");
-    scanf("%f",&a);
+    scanf("%d%d%d", &a,&b,&c);
 
-    a=a*1000;
+    if ( a>b)
+    {
+        if ( a>c )
+        {
+            max = a;
+        }
+        else
+        {
+            max = c;
+        }
+    }
+    else
+    {
+        if ( b>c )
+        {
+            max = b;
+        }
+        else
+        {
+            max = c;
+        }
+    }
 
-    printf("Meter value= %.2f",a);
+    printf("%d Bigger Number\n", max);
 
     return 0;
 }
